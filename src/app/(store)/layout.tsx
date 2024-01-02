@@ -1,8 +1,8 @@
-import Header from "@/components/header";
-import { ReactNode } from "react";
+import Header from '@/components/header'
+import { ReactNode } from 'react'
 
 interface StoreLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export default function StoreLayout(props: StoreLayoutProps) {
@@ -11,5 +11,5 @@ export default function StoreLayout(props: StoreLayoutProps) {
       <Header />
       {props.children}
     </div>
-  );
+  )
 }
