@@ -17,7 +17,7 @@ export default async function Home() {
   const [highlightedProduct, ...otherProducts] = await getFeaturedProducts()
 
   return (
-    <div className=" grid max-h-[860px] grid-cols-9 grid-rows-6 gap-6">
+    <div className=" grid max-h-[860px] grid-cols-9 grid-rows-6 gap-6 overflow-hidden">
       <div className="col-span-6 row-span-6">
         <ProductCard product={highlightedProduct} />
       </div>
