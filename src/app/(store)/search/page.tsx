@@ -33,8 +33,8 @@ export default async function Search({ searchParams }: SearchProps) {
 
   return (
     <div className="fkex flex-col gap-4">
-      <p className="text-sm">
-        Resultados para: <span className="font-semibold">{query}</span>
+      <p className="text-sm mb-4">
+        Resultados para: <span className="font-semibold ">{query}</span>
       </p>
 
       <div className="grid grid-cols-3 gap-6">

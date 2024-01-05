@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-export function LoadingSkeletion({
+export function LoadingSkeleton({
   className,
   ...props
 }: ComponentProps<'div'>) {
