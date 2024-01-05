@@ -4,6 +4,8 @@ import { Product } from '@/data/types/products'
 import { Metadata } from 'next'
 
 async function getFeaturedProducts(): Promise<Product[]> {
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+
   const response = await api('/products/featured', {
     next: {
       revalidate: 3600,
