@@ -23,6 +23,8 @@ Para fins educativos, o projeto foi primariamente desenvolvido com um mock de ba
 
 ## Instrução de uso
 
+*Lembre-se de ter o **Node.js** e **Git** instalados/configurados em sua máquina antes de iniciar o projeto.*
+
 1. Clone este repositório em seu computador:
    ```bash
    git clone git@github.com:tex008/DevStore-NextJS13.git
