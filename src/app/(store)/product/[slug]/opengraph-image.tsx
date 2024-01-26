@@ -4,6 +4,7 @@ import { env } from '@/env'
 import Image from 'next/image'
 import { ImageResponse } from 'next/og'
 import colors from 'tailwindcss/colors'
+import 'zod'
 
 export const runtime = 'edge'
 
@@ -35,6 +36,8 @@ export default async function OgImage({
   const product = await getProduct(params.slug)
 
   const productImageURL = new URL(product.image, env.APP_URL).toString()
+
+  console.log('productImageURL', productImageURL)
 
   return new ImageResponse(
     (
